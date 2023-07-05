@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
     s.source_files = 'VIMediaCache/*.{h,m}', 'VIMediaCache/**/*.{h,m}'
     s.frameworks = 'MobileCoreServices', 'AVFoundation'
     s.requires_arc = true
+    s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 end
 
